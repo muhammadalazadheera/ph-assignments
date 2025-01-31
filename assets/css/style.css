@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
@@ -8481,6 +8481,10 @@ html:has(.drawer-open.drawer-open){
   isolation: auto;
 }
 
+.z-\[1\]{
+  z-index: 1;
+}
+
 .float-start{
   float: inline-start;
 }
@@ -8525,8 +8529,21 @@ html:has(.drawer-open.drawer-open){
   clear: none;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mr-2{
+  margin-right: 0.5rem;
+}
+
 .mt-2{
   margin-top: 0.5rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
 }
 
 .box-border{
@@ -8626,6 +8643,18 @@ html:has(.drawer-open.drawer-open){
 
 .hidden{
   display: none;
+}
+
+.h-5{
+  height: 1.25rem;
+}
+
+.w-5{
+  width: 1.25rem;
+}
+
+.w-52{
+  width: 13rem;
 }
 
 .w-\[this-is\\\\\]{
@@ -9212,6 +9241,11 @@ html:has(.drawer-open.drawer-open){
   border-style: none;
 }
 
+.divide-solid > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-opacity: 1;
+  border-color: rgb(255 220 38 / var(--tw-divide-opacity, 1));
+}
+
 .place-self-auto{
   place-self: auto;
 }
@@ -9474,6 +9508,10 @@ html:has(.drawer-open.drawer-open){
   border-radius: 0.25rem;
 }
 
+.rounded-box{
+  border-radius: var(--rounded-box, 1rem);
+}
+
 .rounded-b{
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -9598,9 +9636,33 @@ html:has(.drawer-open.drawer-open){
   border-style: none;
 }
 
+.border-solid{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 220 38 / var(--tw-border-opacity, 1));
+}
+
+.bg-\[\#FFF9F4\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 249 244 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-base-100{
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+}
+
+.bg-solid{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 220 38 / var(--tw-bg-opacity, 1));
+}
+
+.bg-transparent{
+  background-color: transparent;
 }
 
 .decoration-slice{
@@ -9713,6 +9775,10 @@ html:has(.drawer-open.drawer-open){
      object-fit: scale-down;
 }
 
+.p-2{
+  padding: 0.5rem;
+}
+
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -9784,8 +9850,21 @@ html:has(.drawer-open.drawer-open){
   vertical-align: super;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold{
   font-weight: 700;
+}
+
+.font-light{
+  font-weight: 300;
+}
+
+.font-medium{
+  font-weight: 500;
 }
 
 .uppercase{
@@ -9870,6 +9949,16 @@ html:has(.drawer-open.drawer-open){
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-gray-300{
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-700{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -9887,6 +9976,7 @@ html:has(.drawer-open.drawer-open){
 }
 
 .decoration-solid{
+  text-decoration-color: #FFDC26;
   text-decoration-style: solid;
 }
 
@@ -10064,6 +10154,12 @@ html:has(.drawer-open.drawer-open){
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-none{
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -10237,7 +10333,38 @@ html:has(.drawer-open.drawer-open){
 }
 
 body {
-  font-family: "ADLaM Display", serif;
+  font-family: "DM Sans", serif;
+}
+
+.navbar-center>ul li a:hover{
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(202 138 4 / var(--tw-text-opacity, 1));
+}
+
+.navbar-center>ul li a:focus{
+  background-color: transparent;
+}
+
+.menu li>*:not(ul, .menu-title, details, .btn):active,
+.menu li>*:not(ul, .menu-title, details, .btn).active,
+.menu li>details>summary:active {
+  background-color: transparent;
+  color: black;
+}
+
+.navbar-end a{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.navbar-end a:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 @media (hover:hover){
@@ -10380,6 +10507,16 @@ body {
 @media (min-width: 640px){
   .sm\:underline{
     text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:flex{
+    display: flex;
+  }
+
+  .lg\:hidden{
+    display: none;
   }
 }
 
