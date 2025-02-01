@@ -8499,6 +8499,10 @@ html:has(.drawer-open.drawer-open){
   top: 18%;
 }
 
+.bottom-\[100px\]{
+  bottom: 100px;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -8553,6 +8557,10 @@ html:has(.drawer-open.drawer-open){
 
 .clear-none{
   clear: none;
+}
+
+.m-0{
+  margin: 0px;
 }
 
 .mx-2{
@@ -8711,6 +8719,10 @@ html:has(.drawer-open.drawer-open){
   height: calc(100vh - 70px);
 }
 
+.h-8{
+  height: 2rem;
+}
+
 .w-2\/3{
   width: 66.666667%;
 }
@@ -8741,6 +8753,14 @@ html:has(.drawer-open.drawer-open){
 
 .w-full{
   width: 100%;
+}
+
+.w-16{
+  width: 4rem;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .flex-shrink{
@@ -9057,6 +9077,10 @@ html:has(.drawer-open.drawer-open){
        break-after: column;
 }
 
+.auto-cols-max{
+  grid-auto-columns: max-content;
+}
+
 .grid-flow-row{
   grid-auto-flow: row;
 }
@@ -9079,6 +9103,10 @@ html:has(.drawer-open.drawer-open){
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -9267,6 +9295,10 @@ html:has(.drawer-open.drawer-open){
 
 .gap-2{
   gap: 0.5rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -9594,6 +9626,18 @@ html:has(.drawer-open.drawer-open){
   border-radius: var(--rounded-box, 1rem);
 }
 
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
+.rounded-sm{
+  border-radius: 0.125rem;
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
 .rounded-b{
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -9758,6 +9802,16 @@ html:has(.drawer-open.drawer-open){
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
 }
 
+.bg-blue-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 246 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-red-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity, 1));
+}
+
 .bg-solid{
   --tw-bg-opacity: 1;
   background-color: rgb(255 220 38 / var(--tw-bg-opacity, 1));
@@ -9770,6 +9824,16 @@ html:has(.drawer-open.drawer-open){
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-base-200{
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity, 1)));
+}
+
+.bg-neutral{
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity, 1)));
 }
 
 .bg-hero-image{
@@ -9865,6 +9929,10 @@ html:has(.drawer-open.drawer-open){
   background-origin: content-box;
 }
 
+.stroke-current{
+  stroke: currentColor;
+}
+
 .object-contain{
   -o-object-fit: contain;
      object-fit: contain;
@@ -9898,6 +9966,10 @@ html:has(.drawer-open.drawer-open){
   padding: 0.5rem;
 }
 
+.p-10{
+  padding: 2.5rem;
+}
+
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -9926,6 +9998,11 @@ html:has(.drawer-open.drawer-open){
 .py-20{
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pt-14{
@@ -9988,6 +10065,10 @@ html:has(.drawer-open.drawer-open){
   vertical-align: super;
 }
 
+.font-mono{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -10001,6 +10082,11 @@ html:has(.drawer-open.drawer-open){
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-lg{
@@ -10120,6 +10206,21 @@ html:has(.drawer-open.drawer-open){
 .text-yellow-400{
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity, 1));
+}
+
+.text-neutral-content{
+  --tw-text-opacity: 1;
+  color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity, 1)));
+}
+
+.text-primary{
+  --tw-text-opacity: 1;
+  color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity, 1)));
+}
+
+.text-secondary{
+  --tw-text-opacity: 1;
+  color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity, 1)));
 }
 
 .underline{
@@ -10927,6 +11028,14 @@ footer{
 }
 
 @media (min-width: 768px){
+  .md\:left-\[50\%\]{
+    left: 50%;
+  }
+
+  .md\:top-\[18\%\]{
+    top: 18%;
+  }
+
   .md\:row-span-3{
     grid-row: span 3 / span 3;
   }
@@ -10955,6 +11064,10 @@ footer{
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:justify-end{
     justify-content: flex-end;
   }
@@ -10965,6 +11078,11 @@ footer{
 
   .md\:bg-center{
     background-position: center;
+  }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .md\:text-black{
