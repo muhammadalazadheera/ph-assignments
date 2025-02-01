@@ -9,6 +9,7 @@ module.exports = {
       backgroundImage: {
         'hero-image': "url('../images/cat-big.png')",
         'product-banner': "url('../images/cute-pet-mid.png')",
+        'price-banner': "url('../images/cute-dog-mid.png')",
       },
       container: {
         padding: {

@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    font-family: "DM Sans", serif;
+    font-family: "Exo 2", serif;
 }
 
 .section-title {
@@ -22,7 +22,7 @@ body {
     color: black;
 }
 
-.navbar-end a{
+.navbar-end a {
     @apply px-10 hover:bg-white hover:text-black;
 }
 
@@ -63,6 +63,39 @@ body {
     @apply bg-[#FFF9F4] p-4 rounded-sm mr-2;
 }
 
+#low-price {
+    @apply mb-20;
+}
+
+.price-container {
+    @apply grid gap-4;
+    grid-template-columns: 1.4fr 1fr;
+}
+
+.price-box {
+    @apply shadow rounded-md items-center pt-20 px-14 relative;
+}
+
+.price-box:first-of-type {
+    @apply h-96 bg-contain bg-right-bottom bg-no-repeat;
+    background: linear-gradient(-40deg, #185b9d6b, #43cea280);
+}
+
+.price-box:nth-last-of-type(1) {
+    @apply h-96 bg-contain bg-right-bottom bg-no-repeat;
+    background: linear-gradient(-30deg, #ffd19465, #70e1f567);
+}
+
+.sm-bg-1 {
+    @apply h-96 bg-contain bg-right-bottom bg-no-repeat absolute right-0 bottom-0;
+    background-image: url('../images/cute-dog-mid.png');
+}
+
+.sm-bg-2 {
+    @apply h-96 bg-contain bg-right-bottom bg-no-repeat absolute right-0 bottom-0;
+    background-image: url('../images/cute-pet-small.png');
+}
+
 @media screen and (max-width: 560px) {
     .product-container {
         grid-template-columns: repeat(2, 1fr);
@@ -70,5 +103,17 @@ body {
 
     .product-banner {
         @apply col-span-2 h-96;
+    }
+
+    .price-container {
+        grid-template-columns: 1fr;
+    }
+
+    .price-box {
+        background-size: 50px auto, cover;
+    }
+
+    .sm-bg-1, .sm-bg-2 {
+        background-size: 200px;
     }
 }
