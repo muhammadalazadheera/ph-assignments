@@ -7,6 +7,10 @@ body {
     font-family: "DM Sans", serif;
 }
 
+.section-title {
+    @apply mb-6
+}
+
 .navbar-center>ul li a {
     @apply focus:bg-transparent hover:bg-transparent hover:text-yellow-600;
 }
@@ -30,14 +34,41 @@ body {
     @apply my-20;
 }
 
-.category-container {
-    @apply mt-6;
-}
-
 .single-category {
     @apply bg-[#F9DF8A] text-center px-8 rounded-md shadow py-6;
 }
 
 .category-image {
     @apply bg-white rounded-full p-5 self-center justify-self-center;
+}
+
+#products {
+    @apply mb-20 bg-[#FFF9F4] py-14
+}
+
+.product-container {
+    grid-template-columns: 35% repeat(3, 1fr);
+}
+
+.product-banner {
+    @apply bg-product-banner bg-right-bottom bg-contain bg-no-repeat py-10 px-6 rounded-md;
+    background-size: 150px;
+}
+
+.product-category {
+    @apply px-2 py-3 shadow-sm border bg-white rounded-md
+}
+
+.product-image {
+    @apply bg-[#FFF9F4] p-4 rounded-sm mr-2;
+}
+
+@media screen and (max-width: 560px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-banner {
+        @apply col-span-2 h-96;
+    }
 }

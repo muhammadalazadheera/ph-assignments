@@ -8553,6 +8553,11 @@ html:has(.drawer-open.drawer-open){
   margin-right: auto;
 }
 
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -9033,10 +9038,6 @@ html:has(.drawer-open.drawer-open){
 
 .grid-flow-col-dense{
   grid-auto-flow: column dense;
-}
-
-.grid-cols-6{
-  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .grid-cols-2{
@@ -9690,6 +9691,11 @@ html:has(.drawer-open.drawer-open){
   border-color: rgb(202 138 4 / var(--tw-border-opacity, 1));
 }
 
+.bg-\[\#F9DF8A\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 223 138 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[\#FFF9F4\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 249 244 / var(--tw-bg-opacity, 1));
@@ -9712,6 +9718,11 @@ html:has(.drawer-open.drawer-open){
 
 .bg-transparent{
   background-color: transparent;
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .bg-hero-image{
@@ -9920,6 +9931,11 @@ html:has(.drawer-open.drawer-open){
   vertical-align: super;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -9928,6 +9944,11 @@ html:has(.drawer-open.drawer-open){
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-xl{
@@ -10017,6 +10038,11 @@ html:has(.drawer-open.drawer-open){
 
 .text-\[\#336699\]\/\[\.35\]{
   color: rgb(51 102 153 / .35);
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 .text-blue-500{
@@ -10411,6 +10437,10 @@ body {
   font-family: "DM Sans", serif;
 }
 
+.section-title{
+  margin-bottom: 1.5rem;
+}
+
 .navbar-center>ul li a:hover{
   background-color: transparent;
   --tw-text-opacity: 1;
@@ -10450,10 +10480,6 @@ body {
   margin-bottom: 5rem;
 }
 
-.category-container{
-  margin-top: 1.5rem;
-}
-
 .single-category{
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
@@ -10475,6 +10501,64 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
   padding: 1.25rem;
+}
+
+#products{
+  margin-bottom: 5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 249 244 / var(--tw-bg-opacity, 1));
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.product-container {
+  grid-template-columns: 35% repeat(3, 1fr);
+}
+
+.product-banner{
+  border-radius: 0.375rem;
+  background-image: url('../images/cute-pet-mid.png');
+  background-size: contain;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-size: 150px;
+}
+
+.product-category{
+  border-radius: 0.375rem;
+  border-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.product-image{
+  margin-right: 0.5rem;
+  border-radius: 0.125rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 249 244 / var(--tw-bg-opacity, 1));
+  padding: 1rem;
+}
+
+@media screen and (max-width: 560px) {
+  .product-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-banner{
+    grid-column: span 2 / span 2;
+    height: 24rem;
+  }
 }
 
 @media (hover:hover){
@@ -10631,6 +10715,10 @@ body {
 }
 
 @media (min-width: 768px){
+  .md\:row-span-3{
+    grid-row: span 3 / span 3;
+  }
+
   .md\:inline{
     display: inline;
   }
@@ -10641,10 +10729,6 @@ body {
 
   .md\:w-1\/2{
     width: 50%;
-  }
-
-  .md\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-6{

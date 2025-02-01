@@ -7,7 +7,8 @@ module.exports = {
         solid: '#FFDC26'
       },
       backgroundImage: {
-        'hero-image': "url('../images/cat-big.png')"
+        'hero-image': "url('../images/cat-big.png')",
+        'product-banner': "url('../images/cute-pet-mid.png')",
       },
       container: {
         padding: {
