@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        solid:'#FFDC26'
+        solid: '#FFDC26'
       },
       backgroundImage: {
         'hero-image': "url('../images/cat-big.png')"
@@ -13,8 +13,8 @@ module.exports = {
         padding: {
           DEFAULT: '1rem',
           sm: '2rem',
-          lg: '8rem',
-          xl: '5rem',
+          lg: '6rem',
+          xl: '6rem',
           '2xl': '6rem',
         },
       },

@@ -9,43 +9,47 @@
 </head>
 
 <body>
-    <header class="bg-[#FFF9F4] border-b border-yellow-600 md:border-none h-16">
-        <nav class="container mx-auto">
-            <div class="navbar p-0">
-                <div class="navbar-start">
-                    <a class="text-xl font-bold"><img class="mr-2 inline" src="assets/images/logo-header.png"
-                            alt="logo">
-                        <span class="hidden md:inline">PET
-                            SHOW</span></a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 font-medium">
-                        <li><a>Find a pet</a></li>
-                        <li><a>Breeds</a></li>
-                        <li><a>Contact us</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end">
-                    <a class="btn hidden md:flex bg-transparent border-solid shadow-none mx-2">Login</a>
-                    <a class="btn hidden md:flex bg-solid shadow-none text-gray-700">Register</a>
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+    <header class="bg-[#FFF9F4]">
+        <nav class="border-b border-yellow-600 md:border-none">
+            <div class="container mx-auto">
+                <div class="navbar p-0">
+                    <div class="navbar-start">
+                        <a class="text-xl font-bold"><img class="mr-2 inline" src="assets/images/logo-header.png"
+                                alt="logo">
+                            <span class="hidden md:inline">PET
+                                SHOW</span></a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 font-medium">
                             <li><a>Find a pet</a></li>
                             <li><a>Breeds</a></li>
                             <li><a>Contact us</a></li>
                         </ul>
                     </div>
+                    <div class="navbar-end">
+                        <a class="btn hidden md:flex bg-transparent border-solid shadow-none mx-2">Login</a>
+                        <a class="btn hidden md:flex bg-solid shadow-none text-gray-700">Register</a>
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                                <li><a>Find a pet</a></li>
+                                <li><a>Breeds</a></li>
+                                <li><a>Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
+    </header>
+    <main>
         <section id="hero" class="h-hero-height container mx-auto bg-hero-image bg-bottom md:bg-center">
             <div class="hero-texts md:w-1/2 pt-14">
                 <h1 class="text-4xl font-bold">Pamper your pet<br>Because they deserve<br>The Best</h1>
@@ -54,7 +58,70 @@
                     <button class="btn bg-solid px-10">Find a pet</button>
             </div>
         </section>
-    </header>
+        <section id="categories">
+            <div class="container mx-auto">
+                <div class="section-title">
+                    <h1 class="text-3xl font-bold">Browse by categories</h1>
+                </div>
+                <div class="category-container grid grid-cols-2 md:grid-cols-6 gap-2">
+                    <div class="single-category">
+                        <div class="category-image">
+                            <img src="assets/images/dog-cartoon.png" alt="">
+                        </div>
+                        <div class="category-text">
+                            <h2 class="text-xl font-extrabold mt-3 mb-1">Dog</h2>
+                            <p>3 items</p>
+                        </div>
+                    </div>
+                    <div class="single-category">
+                        <div class="category-image">
+                            <img src="assets/images/fish-cartoon.png" alt="">
+                        </div>
+                        <div class="category-text">
+                            <h2 class="text-xl font-extrabold mt-3 mb-1">Fish</h2>
+                            <p>3 items</p>
+                        </div>
+                    </div>
+                    <div class="single-category">
+                        <div class="category-image">
+                            <img src="assets/images/cat-cartoon.png" alt="">
+                        </div>
+                        <div class="category-text">
+                            <h2 class="text-xl font-extrabold mt-3 mb-1">Cat</h2>
+                            <p>3 items</p>
+                        </div>
+                    </div>
+                    <div class="single-category">
+                        <div class="category-image">
+                            <img src="assets/images/bird-cartoon.png" alt="">
+                        </div>
+                        <div class="category-text">
+                            <h2 class="text-xl font-extrabold mt-3 mb-1">Birds</h2>
+                            <p>3 items</p>
+                        </div>
+                    </div>
+                    <div class="single-category">
+                        <div class="category-image">
+                            <img src="assets/images/mouse-cartoon.png" alt="">
+                        </div>
+                        <div class="category-text">
+                            <h2 class="text-xl font-extrabold mt-3 mb-1">Small Pet</h2>
+                            <p>3 items</p>
+                        </div>
+                    </div>
+                    <div class="single-category">
+                        <div class="category-image">
+                            <img src="assets/images/rabbit-cartoon.png" alt="">
+                        </div>
+                        <div class="category-text">
+                            <h2 class="text-xl font-extrabold mt-3 mb-1">Rabit</h2>
+                            <p>3 items</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

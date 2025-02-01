@@ -23,6 +23,21 @@ body {
 }
 
 #hero {
-    background-size: contain;
-    background-repeat: no-repeat;
+    @apply bg-contain bg-no-repeat;
+}
+
+#categories {
+    @apply my-20;
+}
+
+.category-container {
+    @apply mt-6;
+}
+
+.single-category {
+    @apply bg-[#F9DF8A] text-center px-8 rounded-md shadow py-6;
+}
+
+.category-image {
+    @apply bg-white rounded-full p-5 self-center justify-self-center;
 }
