@@ -96,6 +96,25 @@ body {
     background-image: url('../images/cute-pet-small.png');
 }
 
+.subscription-box {
+    @apply grid px-24 rounded-2xl shadow-lg py-8 top-[-200px] absolute left-[50%];
+    grid-template-columns: 1fr 1.5fr;
+    transform: translateX(-50%);
+    width: 83%;
+}
+
+footer {
+    @apply pt-[200px];
+}
+
+.footer-content {
+    @apply grid grid-cols-3 items-end;
+}
+
+.footer-social ul li {
+    @apply inline-block
+}
+
 @media screen and (max-width: 560px) {
     .product-container {
         grid-template-columns: repeat(2, 1fr);
@@ -115,5 +134,43 @@ body {
 
     .sm-bg-1, .sm-bg-2 {
         background-size: 200px;
+    }
+
+    .subscription-box {
+        grid-template-columns: 1fr;
+        width: 90%;
+        @apply px-4 text-left
+    }
+
+    input[type=text] {
+        width: 100%;
+    }
+
+    footer {
+        @apply pt-[300px]
+    }
+
+    .footer-content {
+        @apply grid-cols-1 text-left;
+    }
+
+    .footer-links, .footer-social {
+        @apply mx-0 my-5;
+    }
+}
+
+.bowl {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
