@@ -19,5 +19,10 @@ body {
 }
 
 .navbar-end a{
-    @apply px-10 mx-2 hover:bg-white hover:text-black
+    @apply px-10 hover:bg-white hover:text-black;
+}
+
+#hero {
+    background-size: contain;
+    background-repeat: no-repeat;
 }
