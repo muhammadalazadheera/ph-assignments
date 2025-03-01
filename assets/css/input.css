@@ -10,6 +10,8 @@
 
 body {
     background-color: #F4F7FF;
+    font-family: "Poppins", sans-serif;
+
 }
 
 .nav-buttons ul li{
@@ -18,11 +20,53 @@ body {
 
 .dashboard {
     @apply grid;
-    grid-template-columns: 70% 30%;
-    column-gap: 5px;
+    grid-template-columns: 75% 25%;
+    column-gap: 10px;
 }
 
 .stats {
-    @apply grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    @apply grid gap-3;
+    grid-template-columns: 1fr 2fr 1.2fr;
+}
+
+.blog-button {
+    @apply grid items-center h-24 rounded-lg;
+    background-image: linear-gradient(to top right, #3752FD, #9BA8F8 );
+}
+
+.tasks {
+    @apply grid gap-3;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.single-task {
+    @apply rounded-lg;
+}
+
+.task-cat {
+    @apply inline-block;
+}
+
+.task-desc {
+    @apply rounded-md;
+}
+
+.task-desc p {
+    @apply text-sm;
+}
+
+.task-title {
+    @apply my-3;
+}
+
+.date-n-button {
+    @apply mt-3;
+}
+
+.task-button {
+    @apply text-sm;
+}
+
+.deadline p:nth-of-type(1) {
+    @apply text-gray-500;
 }
