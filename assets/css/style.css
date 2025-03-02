@@ -1868,6 +1868,11 @@ video {
   background-color: rgb(30 64 175 / var(--tw-bg-opacity, 1));
 }
 
+.bg-gray-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity, 1));
+}
+
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -2682,6 +2687,7 @@ body {
 }
 
 .single-activity{
+  margin-top: 1rem;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgb(244 247 255 / var(--tw-bg-opacity, 1));
@@ -2693,6 +2699,10 @@ body {
 
 .single-blog{
   margin-bottom: 1.25rem;
+}
+
+.deactive-button {
+  background-color: gray;
 }
 
 @media (min-width: 640px){

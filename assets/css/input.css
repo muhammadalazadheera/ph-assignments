@@ -80,9 +80,13 @@ body {
 }
 
 .single-activity {
-    @apply p-5 bg-[#F4F7FF] rounded-md shadow-sm;
+    @apply p-5 bg-[#F4F7FF] rounded-md shadow-sm mt-4;
 }
 
 .single-blog {
     @apply mb-5;
+}
+
+.deactive-button {
+    background-color: gray;
 }
