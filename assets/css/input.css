@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiro+Bangla:ital@0;1&display=swap');
+@import url('https://fonts.maateen.me/mukti/font.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu li a {
+    @apply ml-1 btn-primary btn-outline;
+}
+
+#hero {
+    @apply mb-28;
+}
+
+.hero-elements {
+    @apply flex;
+}
+
+.hero-text {
+    @apply w-1/2 pt-[10%];
+}
+
+#name:focus-visible,
+#password:focus-visible {
+    @apply outline-none;
+}
+
+.section-title {
+    @apply text-center mb-14
+}
+
+.cat-buttons button {
+    @apply inline-block my-1;
+}
+
+.collapse {
+    @apply bg-[#ededed] mb-4;
+}
+
+.collapse-content {
+    @apply text-gray-600;
+}
+
+footer {
+    @apply mt-32;
+}
+
+.footer-content {
+    @apply flex justify-between;
+}
+
+.footer-links ul li {
+    @apply list-none inline-block mr-1 text-xl;
+}
+
+.vocabulary-info {
+    @apply text-center bg-[#ededed] rounded-lg my-10 p-6;
+}
+
+.null-info,
+.no-info {
+    @apply py-20;
+}
+
+.info-cards {
+    @apply hidden
+}
+
+.info-cards {
+    @apply grid gap-5;
+    grid-template-columns: repeat(auto-fit, minmax(32%, 1fr));
+}
+
+.card-body {
+    @apply py-10 px-6;
+}
+
+.modal-action {
+    @apply justify-start
+}

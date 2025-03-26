@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English জানালা</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="bg-[#EDEDED] shadow-sm border-b border-black/50 sticky top-0 z-50 hidden">
+        <div class="navbar container max-w-[90%] mx-auto px-0">
+            <div class="flex-1">
+                <a class="px-0 btn btn-ghost hover:bg-[#ededed] hover:border-transparent hover:shadow-none text-xl">
+                    <p class="font-poppins">English</p>
+                    <img src="assets/images/logo.png" alt="">
+                    <p class="font-tiro">জানালা</p>
+                </a>
+            </div>
+            <div class="flex-none">
+                <ul class="px-0 menu menu-horizontal">
+                    <li><a href="#faq" class="btn"><i class="fa fa-question-circle"></i>FAQ</a></li>
+                    <li><a href="#vocabulary" class="btn"><i class="fas fa-book-open"></i>Learn</a></li>
+                    <li><a href="#" onclick="logoutFunction()" class="btn"><i class="fas fa-sign-in-alt"></i>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="hero">
+            <div class="container max-w-[90%] mx-auto">
+                <div class="hero-elements">
+                    <div class="hero-text">
+                        <h1 class="text-5xl font-poppins font-extrabold"><span class="text-sky-400">English</span> is
+                            Easy!!</h1>
+                        <p class="my-6 text-lg font-bold font-mukti">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন
+                            অথবা আপনার দক্ষতা
+                            বাড়াতে চান,
+                            আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+                        <form onsubmit="loginFunction(event)">
+                            <input class="input" type="text" name="name" id="name" placeholder="Stephen Bright">
+                            <input class="input block my-3" type="password" name="password" id="password"
+                                placeholder="********">
+                            <button class="btn btn-primary">Get Started</button>
+                        </form>
+                    </div>
+                    <div class="hero-image">
+                        <img width="80%" class="mx-auto" src="assets/images/hero-student.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="vocabulary" class="mb-28 mt-14 hidden">
+            <div class="container max-w-[90%] mx-auto">
+                <div class="section-title">
+                    <h1 class="font-poppins text-4xl font-extrabold"><span class="text-sky-400">Let's</span> Learn
+                        Vocabulary</h1>
+                </div>
+                <div class="vocabulary-box">
+                    <div id="lesson_buttons" class="cat-buttons text-center">
+
+                    </div>
+                    <div class="vocabulary-info">
+                        <div id="loader" class="loader hidden">
+                            <span class="loading loading-dots loading-xl"></span>
+                        </div>
+                        <div class="no-info">
+                            <p class="text-gray-500 font-mukti">আপনি এখনো কোন Lesson Select করেন নাই</p>
+                            <h2 class="text-3xl font-semibold pt-5 font-mukti">একটি <span class="font-poppins">Lesson Select </span>করুন।</h2>
+                        </div>
+                        <div class="null-info hidden">
+                            <img class="block mx-auto" src="assets/images/alert-error.png" alt="">
+                            <p class="text-gray-500 font-mukti">এই <span class="font-poppins">Lesson</span> এ এখনো কোন <span class="font-poppins">Vocabulary</span> যুক্ত করা হয়নি।</p>
+                            <h2 class="text-3xl font-semibold pt-5">নেক্সট <span class="font-poppins">Lesson</span> এ যান</h2>
+                        </div>
+                        <div id="words" class="info-cards">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="faq" class="hidden">
+            <div class="container max-w-[90%] mx-auto">
+                <div class="section-title">
+                    <h1 class="font-poppins text-4xl font-extrabold"><span class="text-sky-400">Frequently</span> Asked
+                        Question</h1>
+                </div>
+                <div class="faq-content">
+                    <div class="collapse">
+                        <input type="radio" name="my-accordion-1" checked="checked" />
+                        <div class="collapse-title font-semibold">What is the difference between <code>var</code>,
+                            <code>let</code>, and <code>const</code>?</div>
+                        <div class="collapse-content text-md">
+                            <code>var, let, and const</code> are used to declare variables in javascript with some differences.
+                            One of the main differences is that <code>var</code> is function scoped and <code>let</code> and
+                            <code>const</code> are block scoped. <code>var</code> can be re-declared and updated but <code>let</code>
+                            and <code>const</code> can't be re-declared but can be updated. <code>const</code> is used to declare
+                            constants which can't be updated.
+                        </div>
+                    </div>
+                    <div class="collapse">
+                        <input type="radio" name="my-accordion-1" />
+                        <div class="collapse-title font-semibold">What is the difference between <code>map()</code>,
+                            <code>forEach()</code>, and <code>filter()</code></div>
+                        <div class="collapse-content text-md">
+                            <code>map()</code>, <code>forEach()</code>, and <code>filter()</code> are used to iterate over an
+                            array in javascript. <code>map()</code> returns a new array with the same length as the original array
+                            but with the modified elements. <code>forEach()</code> doesn't return anything but it is used to
+                            iterate over an array. <code>filter()</code> returns a new array with the elements that pass the
+                            condition.
+                        </div>
+                    </div>
+                    <div class="collapse">
+                        <input type="radio" name="my-accordion-1" />
+                        <div class="collapse-title font-semibold">What are arrow functions and how they are different
+                            from regular functions?</div>
+                        <div class="collapse-content text-md">
+                            Arrow functions are a new way to write functions in javascript. They are more concise and have a
+                            shorter syntax than regular functions. Arrow functions don't have their own <code>this</code> and
+                            <code>arguments</code> but they inherit them from the parent scope. Arrow functions are not hoisted
+                            like regular functions.
+                        </div>
+                    </div>
+                    <div class="collapse">
+                        <input type="radio" name="my-accordion-1" />
+                        <div class="collapse-title font-semibold">How JavaScript Promises work?</div>
+                        <div class="collapse-content text-md">
+                            Promises are used to handle asynchronous operations in javascript. A promise is an object that
+                            represents the eventual completion or failure of an asynchronous operation. Promises have three
+                            states: pending, fulfilled, and rejected. Promises are used to avoid callback hell and write cleaner
+                            code.
+                        </div>
+                    </div>
+                    <div class="collapse">
+                        <input type="radio" name="my-accordion-1" />
+                        <div class="collapse-title font-semibold">How closures work in JavaScript?</div>
+                        <div class="collapse-content text-md">
+                            Closures are functions that have access to the outer function's scope even after the outer function
+                            has returned. Closures are used to create private variables and functions in javascript. Closures
+                            have access to the outer function's variables even after the outer function has finished
+                            executing.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="border-t shadow-md py-12">
+        <div class="container max-w-[90%] mx-auto">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <a
+                        class="px-0 mb-3 btn btn-ghost hover:bg-[#ededed] hover:border-transparent hover:shadow-none text-xl shadow-md">
+                        <p class="font-poppins">English</p>
+                        <img src="assets/images/logo.png" alt="">
+                        <p class="font-tiro">জানালা</p>
+                    </a>
+                    <p class="font-bold text-xl font-mukti">ইংরেজি শিখুন সহজে</p>
+                    <p class="font-poppins">Providing ED-Tech Applications since 2025</p>
+                </div>
+                <div class="footer-links">
+                    <p>Follow Us</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/muhammadalazadheera" target="_blank"><i
+                                    class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="https://www.youtube.com/@muhammadheera3064" target="_blank"><i
+                                    class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/muhammadalazadheera/" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <dialog id="details_modal" class="modal">
+        <div class="modal-box font-poppins">
+            <div class="vocabulary-details border p-5 rounded-md hover:bg-blue-50 transition-all hover:ease-in-out duration-300">
+                <h1 class="text-xl font-semibold"><span id="d-word"></span> (<i class="fas fa-microphone-alt"></i> <span class="font-mukti"
+                        id="d-pronunciation"></span>)</h1>
+                <br>
+                <h2 class="text-lg font-semibold mb-2">Meaning</h2>
+                <p id="d-meaning" class="font-semibold font-mukti"></p>
+                <br>
+                <h2 class="text-lg font-semibold mb-2">Example</h2>
+                <p id="d-example"></p>
+                <br>
+                <h2 class="text-lg font-semibold mb-2 font-mukti">সমার্থক শব্দ গুলো</h2>
+                <div id="d-synonims">
+                </div>
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn btn-primary border-none outline-none">Complete Learning</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
