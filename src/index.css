@@ -2,6 +2,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+
 body {
     font-family: "Poppins", sans-serif;
 }
@@ -9,4 +10,33 @@ body {
 #hero {
     background-image: url('assets/images/hero.png');
     @apply h-[70vh] bg-cover bg-center flex items-center;
+}
+
+table {
+    @apply w-full;
+}
+
+th {
+    @apply py-6 px-4 text-left;
+}
+
+td {
+    @apply p-4;
+}
+
+tr {
+    @apply border-b;
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+
+.left-bar-table td {
+    @apply text-left px-0 py-0 text-right;
+}
+
+.left-bar-table th {
+    @apply text-left px-0 py-0;
 }
