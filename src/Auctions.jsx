@@ -2,7 +2,7 @@ import React from "react";
 import AllItems from "./components/AllItems";
 import FavItems from "./components/FavItems";
 import { useEffect, useState } from "react";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 
 export default function Auctions() {
   const [items, setItems] = useState([]);
@@ -11,7 +11,26 @@ export default function Auctions() {
   const addToFav = (item) => {
     const newFavItems = [...favItems, item];
     setFavItems(newFavItems);
+    toast.success("Added to favorites", {
+      theme: "colored"
+    })
   };
+
+  const handleDelete = (id) => {
+    const newFavItems = favItems.filter((item) => item.id !== id);
+    setFavItems(newFavItems);
+    
+    const favButton = document.getElementById(`fav-button-${id}`);
+    favButton.removeAttribute("disabled");
+    favButton.classList.remove("cursor-not-allowed");
+
+    favButton.querySelector('i').classList.remove("fas", "text-red-500");
+    favButton.querySelector('i').classList.add("fa-regular");
+
+    toast.error("Removed from favorites", {
+      theme: "colored"
+    })
+  }
 
   useEffect(() => {
     fetch("items.json")
@@ -34,7 +53,7 @@ export default function Auctions() {
           <div className="w-[70%]">
             <AllItems items={ items } addToFav={addToFav} />
           </div>
-          <FavItems favItems={favItems} />
+          <FavItems favItems={favItems} handleDelete={handleDelete} />
         </div>
       </div>
     </div>

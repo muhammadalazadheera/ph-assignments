@@ -1,7 +1,8 @@
 import React from "react";
 import FavCard from "./FavCard";
+import NoFav from "./NoFav";
 
-export default function FavItems({favItems}) {
+export default function FavItems({ favItems, handleDelete }) {
   const total = favItems.reduce((acc, item) => acc + item.currentBidPrice, 0);
   return (
     <div className="sidebar bg-white px-2 w-[28%] rounded-lg">
@@ -11,9 +12,13 @@ export default function FavItems({favItems}) {
         </h2>
       </div>
       <div className="fav-items border-t border-b">
-        {
-          favItems.map( item => <FavCard key={item.id} item={item} /> )
-        }
+        {favItems.length !== 0 ? (
+          favItems.map((item) => (
+            <FavCard key={item.id} item={item} handleDelete={handleDelete} />
+          ))
+        ) : (
+          <NoFav />
+        )}
       </div>
       <div className="py-4">
         <table className="left-bar-table">

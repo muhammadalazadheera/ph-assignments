@@ -1,5 +1,4 @@
 import React from "react";
-import { toast } from "react-toastify";
 
 export default function SingleItem({ item, addToFav }) {
   const handleAddToFav = (e) => {
@@ -8,7 +7,6 @@ export default function SingleItem({ item, addToFav }) {
     e.target.classList.remove("fa-regular");
     e.target.classList.add("fas", "text-red-500");
     addToFav(item);
-    toast.success("Added to favorites")
   };
   return (
     <tr>
@@ -25,7 +23,7 @@ export default function SingleItem({ item, addToFav }) {
       <td>${item.currentBidPrice}</td>
       <td>{item.timeLeft}</td>
       <td>
-        <button onClick={handleAddToFav}>
+      <button id={`fav-button-${item.id}`} onClick={handleAddToFav}>
           <i className="fa-regular fa-heart hover:text-red-500"></i>
         </button>
       </td>
