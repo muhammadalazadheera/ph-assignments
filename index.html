@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+  <!-- navbar-starts -->
+  <nav>
+    <div class="container w-[90%] mx-auto">
+      <div class="navbar bg-base-100 px-0">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li><a>Auctions</a></li>
+              <li><a>Categories</a></li>
+              <li><a>How to work</a></li>
+            </ul>
+          </div>
+          <a class="text-xl text-blue-700">Auction<span class="font-extrabold text-yellow-500">Gallery</span></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>Auctions</a></li>
+            <li><a>Categories</a></li>
+            <li><a>How to work</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="bg-gray-300 rounded-full w-[40px] h-[40px] flex justify-center items-center mr-2"><i
+              class="fa-regular fa-bell"></i></a>
+          <a><img class="rounded-full" width="40px" height="40px" src="https://i.ibb.co.com/39NDbyqX/1524234561685.jpg"
+              alt="user image"></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar-ends -->
+
+
+  <!-- hero-starts -->
+  <div id="hero">
+    <div class="container w-[90%] mx-auto">
+      <div class="hero-text w-[60%]">
+        <h1 class="text-white font-bold text-4xl">Bid on Your Favorite Items from Around the World!!</h1>
+        <p class="py-2 text-white">Discover a world of unique treasures and rare finds. AuctionGallery connects buyers
+          and sellers globally, offering a seamless platform to bid on exclusive items.</p>
+        <button class="btn bg-white rounded-4xl mt-2">Explore Auctions</button>
+      </div>
+    </div>
+  </div>
+  <!-- hero ends-->
+
+  <!-- content-starts -->
+  <div id="root"></div>
+  <!-- content-ends -->
+
+  <!-- footer-starts -->
+  <footer class="h-[300px] flex justify-center items-center flex-col">
+    <div class="footer-logo text-center">
+      <a class="text-3xl text-blue-700">Auction<span class="font-extrabold text-yellow-500">Gallery</span></a>
+      <p>Bid. Win. Won.</p>
+    </div>
+    <ul class="menu menu-horizontal px-1">
+      <li><a>Home</a></li>
+      <li><a>Auctions</a></li>
+      <li><a>Categories</a></li>
+      <li><a>How to work</a></li>
+    </ul>
+    <p>&copy; 2025 AuctionHub. All rights reserved.</p> 
+  </footer>
+  <!-- footer-ends -->
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "title": "Vintage Rolex Watch",
+      "description": "A classic 1960s Rolex in pristine condition.",
+      "currentBidPrice": 1500,
+      "timeLeft": "2h 30m",
+      "bidsCount": 12,
+      "image": "https://i.ibb.co.com/XxvQKpbt/Vintage-Rolex-Oysterdate-precision-6266-Boys-size-for-ladies-1-600x600.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Signed Michael Jordan Jersey",
+      "description": "Authentic Chicago Bulls jersey signed by MJ himself.",
+      "currentBidPrice": 2300,
+      "timeLeft": "1h 15m",
+      "bidsCount": 28,
+      "image": "https://i.ibb.co.com/mrTsTrBT/69890940-p-Kl-Zw-R30-Lx-Es-Ed-Ten4-JVMNCGq5-Wkc-Nz7-OUkeh-HLinbk.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Antique Persian Rug",
+      "description": "Handwoven Persian rug from the early 1900s.",
+      "currentBidPrice": 875,
+      "timeLeft": "3h 45m",
+      "bidsCount": 7,
+      "image": "https://i.ibb.co.com/HfC1XnD6/fdccfc75ab516e1cc71c45dcf89a3d85.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Apple iPhone 14 Pro",
+      "description": "Brand new iPhone 14 Pro, 256GB, Space Black.",
+      "currentBidPrice": 980,
+      "timeLeft": "4h 5m",
+      "bidsCount": 19,
+      "image": "https://i.ibb.co.com/Q37X5HLw/6586500528.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Electric Guitar - Fender Stratocaster",
+      "description": "Used Fender Stratocaster in excellent condition.",
+      "currentBidPrice": 640,
+      "timeLeft": "2h 10m",
+      "bidsCount": 14,
+      "image": "https://i.ibb.co.com/qMVjZBZF/Q-QBCg-KJAj-GI33sx-REVhinijf-WZs-BIq-AU7-VCFNAhzclss-HYNVxv64-JRu-FUy-Ujnd-Ytu5q-F6u-Hpmxq-CQch-M-m.webp"
+    },
+    {
+      "id": 6,
+      "title": "Marvel Comic #1 (Reprint)",
+      "description": "Special edition reprint of the first Marvel Comic.",
+      "currentBidPrice": 125,
+      "timeLeft": "5h 20m",
+      "bidsCount": 33,
+      "image": "https://i.ibb.co.com/93nyt2r1/marvel-digital-only-1.jpg"
+    }
+  ]
+  
