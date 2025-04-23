@@ -49,13 +49,13 @@ function NavBar() {
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="bookings">My-Bookings</NavLink>
+            <NavLink to="/bookings">My-Bookings</NavLink>
           </li>
           <li>
-            <NavLink to="blogs">Blogs</NavLink>
+            <NavLink to="/blogs">Blogs</NavLink>
           </li>
           <li>
-            <NavLink to="contact">Contact Us</NavLink>
+            <NavLink to="/contact">Contact Us</NavLink>
           </li>
         </ul>
       </div>
