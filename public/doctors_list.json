@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Ayesha Rahman",
+    "edu": ["MBBS", "FCPS (Gynecology)"],
+    "reg_no": "BMDC123456",
+    "exp": 11,
+    "hospital": "Dhaka Medical College Hospital",
+    "fees": 500,
+    "img": "https://i.ibb.co.com/1YSYszH5/1.png",
+    "availability": ["Sunday", "Tuesday", "Thursday"]
+  },
+  {
+    "id": 2,
+    "name": "Dr. Nusrat Jahan",
+    "edu": ["MBBS", "MD (Pediatrics)"],
+    "reg_no": "BMDC234567",
+    "exp": 9,
+    "hospital": "Square Hospitals, Dhaka",
+    "fees": 600,
+    "img": "https://i.ibb.co.com/v63s1Ghk/2.png",
+    "availability": ["Monday", "Wednesday", "Saturday"]
+  },
+  {
+    "id": 3,
+    "name": "Dr. Farzana Haque",
+    "edu": ["MBBS", "MD (Dermatology)"],
+    "reg_no": "BMDC345678",
+    "exp": 10,
+    "hospital": "United Hospital, Dhaka",
+    "fees": 700,
+    "img": "https://i.ibb.co.com/V0VfFywX/3.png",
+    "availability": ["Sunday", "Tuesday", "Friday"]
+  },
+  {
+    "id": 4,
+    "name": "Dr. Shirin Akter",
+    "edu": ["MBBS", "MS (ENT)"],
+    "reg_no": "BMDC456789",
+    "exp": 8,
+    "hospital": "Bangabandhu Sheikh Mujib Medical University",
+    "fees": 550,
+    "img": "https://i.ibb.co.com/xKmpyGWv/4.png",
+    "availability": ["Monday", "Wednesday", "Thursday"]
+  },
+  {
+    "id": 5,
+    "name": "Dr. Tasnim Hossain",
+    "edu": ["MBBS", "MD (Psychiatry)"],
+    "reg_no": "BMDC567890",
+    "exp": 7,
+    "hospital": "National Institute of Mental Health, Dhaka",
+    "fees": 500,
+    "img": "https://i.ibb.co.com/bMDz8jck/5.png",
+    "availability": ["Sunday", "Wednesday", "Thursday"]
+  },
+  {
+    "id": 6,
+    "name": "Dr. Marium Binte Azad",
+    "edu": ["MBBS", "FCPS (Medicine)"],
+    "reg_no": "BMDC678901",
+    "exp": 12,
+    "hospital": "Ibn Sina Hospital, Dhaka",
+    "fees": 650,
+    "img": "https://i.ibb.co.com/YTqCfpcj/6.png",
+    "availability": ["Sunday", "Thursday"]
+  },
+  {
+    "id": 7,
+    "name": "Dr. Laila Siddiqua",
+    "edu": ["MBBS", "MD (Cardiology)"],
+    "reg_no": "BMDC789012",
+    "exp": 15,
+    "hospital": "Labaid Cardiac Hospital, Dhaka",
+    "fees": 900,
+    "img": "https://i.ibb.co.com/JjhSDJ91/7.png",
+    "availability": ["Sunday", "Monday", "Thursday"]
+  },
+  {
+    "id": 8,
+    "name": "Dr. Shahana Parveen",
+    "edu": ["MBBS", "MS (Orthopedics)"],
+    "reg_no": "BMDC890123",
+    "exp": 10,
+    "hospital": "Bangladesh Orthopedic Hospital",
+    "fees": 800,
+    "img": "https://i.ibb.co.com/wFjsQqxr/8.png",
+    "availability": ["Saturday", "Sunday", "Thursday"]
+  },
+  {
+    "id": 9,
+    "name": "Dr. Rehnuma Ferdous",
+    "edu": ["MBBS", "MS (Ophthalmology)"],
+    "reg_no": "BMDC901234",
+    "exp": 6,
+    "hospital": "National Institute of Ophthalmology, Dhaka",
+    "fees": 500,
+    "img": "https://i.ibb.co.com/m566fxqM/9.png",
+    "availability": ["Sunday", "Thursday", "Friday"]
+  },
+  {
+    "id": 10,
+    "name": "Dr. Munira Sultana",
+    "edu": ["MBBS", "FCPS (Anesthesiology)"],
+    "reg_no": "BMDC012345",
+    "exp": 13,
+    "hospital": "Popular Diagnostic Centre, Dhaka",
+    "fees": 750,
+    "img": "https://i.ibb.co.com/xq4kcQGC/10.png",
+    "availability": ["Monday", "Tuesday","Thursday"]
+  },
+  {
+    "id": 11,
+    "name": "Dr. Naila Hossain",
+    "edu": ["MBBS", "MD (Endocrinology)"],
+    "reg_no": "BMDC112233",
+    "exp": 9,
+    "hospital": "Evercare Hospital, Dhaka",
+    "fees": 850,
+    "img": "https://i.ibb.co.com/N6Kbm59f/11.png",
+    "availability": ["Tuesday", "Wednesday", "Friday"]
+  },
+  {
+    "id": 12,
+    "name": "Dr. Salma Akter",
+    "edu": ["MBBS", "FCPS (Pediatrics)"],
+    "reg_no": "BMDC998877",
+    "exp": 10,
+    "hospital": "Green Life Hospital, Dhaka",
+    "fees": 620,
+    "img": "https://i.ibb.co.com/B2SYqfGQ/12.png",
+    "availability": ["Sunday", "Wednesday", "Thursday"]
+  }
+]

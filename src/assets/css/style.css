@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+    --primary-color: #176AE5;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #efefef;
+}
+
+.hero-section {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 50%);
+    @apply rounded-4xl border-2 shadow-sm border-white py-10
+}
+
+.active {
+    @apply text-primary font-bold;
+}
+
+.emoji-404{
+
+    position: relative;
+    animation: mymove 2.5s infinite;
+  }
+  
+  @keyframes mymove {
+    33%   {top: 0px;}
+    66%  {top: 20px;}
+    100%  {top: 0px}
+  
+  
+  
+  }
