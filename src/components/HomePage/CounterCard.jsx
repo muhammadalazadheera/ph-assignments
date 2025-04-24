@@ -9,10 +9,10 @@ function CounterCard({ icon, title, text }) {
   });
   return (
     <div>
-      <div className="counter-card bg-white shadow-md rounded-lg px-6 py-8">
+      <div className="counter-card bg-white shadow-md rounded-lg px-6 py-8 text-center md:text-left">
         <div className="counter-card-icon">
           <img
-            className="border border-gray-200 rounded-md shadow-sm"
+            className="border border-gray-200 rounded-md shadow-sm inline"
             src={icon}
             alt=""
           />

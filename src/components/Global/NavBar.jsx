@@ -3,7 +3,7 @@ import { NavLink, Link } from "react-router";
 
 function NavBar() {
   return (
-    <div className="navbar container mx-auto w-[80%]">
+    <div className="navbar container mx-auto md:w-[80%]">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -25,23 +25,26 @@ function NavBar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-gray-800 text-white rounded-box z-1 mt-3 w-64 p-2 shadow"
           >
             <li>
-              <a>Home</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <a>My-Bookings</a>
+              <NavLink to="/bookings">My-Bookings</NavLink>
             </li>
             <li>
-              <a>Blogs</a>
+              <NavLink to="/blogs">Blogs</NavLink>
             </li>
             <li>
-              <a>Contact Us</a>
+              <NavLink to="/contact">Contact Us</NavLink>
             </li>
           </ul>
         </div>
-        <Link to="/" className="text-xl"><i className="fa-solid fa-stethoscope bg-primary rounded-full text-white px-1.5 py-2"></i> DocTalk</Link>
+        <Link to="/" className="text-xl">
+          <i className="fa-solid fa-stethoscope bg-primary rounded-full text-white px-1.5 py-2"></i>{" "}
+          <span className="hidden md:inline">DocTalk</span>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">

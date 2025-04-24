@@ -6,6 +6,7 @@ import { Link } from "react-router";
 import { toast } from "react-toastify";
 import ChangeTitle from "../components/Global/ChangeTitle";
 import { useEffect, useState } from "react";
+import ScheduleImage from "../assets/images/schedule.png";
 
 function BookingsPage() {
   const [bookingData, setBookingData] = useState([]);
@@ -28,14 +29,14 @@ function BookingsPage() {
     return (
       <div>
         <ChangeTitle title="My Bookings" />
-        <div className="bg-white rounded-2xl container w-[80%] mx-auto my-10 p-7">
+        <div className="bg-white rounded-2xl container w-[95%] lg:w-[80%] mx-auto my-10 p-7">
           <DocChart data={bookingData} />
         </div>
         <SectionTitle
           title="My Today's Appointment"
           subtitle="Overview of scheduled bookings for today"
         />
-        <div className="container w-[80%] mx-auto mt-10">
+        <div className="container w-[95%] lg:w-[80%] mx-auto mt-10">
           {bookingData.map((doctor) => (
             <DocDetails
               name={doctor.name}
@@ -51,12 +52,15 @@ function BookingsPage() {
     );
   } else {
     return (
-      <div className="flex justify-center items-center flex-col-reverse h-screen">
-        <div className="bg-white text-center p-20 rounded-2xl">
-          <h1 className="text-2xl font-bold mb-3">Bookings not found</h1>
-          <Link className="btn btn-outline btn-primary" to="/">
-            Browser Doctors
-          </Link>
+      <div className="flex justify-center items-center">
+        <div className="bg-white text-center px-40 py-20 rounded-2xl my-20 h-[400px] shadow-md">
+          <img className="px-10 mx-auto" width={300} src={ScheduleImage} alt="" />
+          <div className="">
+            <h1 className="text-2xl font-bold mb-3">You Haven't Booked Any Appointment Yet.</h1>
+            <Link className="btn btn-outline btn-primary rounded-3xl" to="/">
+              Browser Doctors
+            </Link>
+          </div>
         </div>
       </div>
     );

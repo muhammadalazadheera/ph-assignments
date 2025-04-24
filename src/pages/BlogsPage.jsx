@@ -12,7 +12,7 @@ function BlogsPage() {
     <div>
       <ChangeTitle title="Blogs" />
       <SectionTitle title="Blogs" subtitle="Explore our latest blog posts" />
-      <div className="container w-[80%] mx-auto my-10">
+      <div className="container w-[95%] lg:w-[80%] mx-auto my-10">
         {blogs.map((blog) => <SingleBlog key={blog.id} blog={blog} />)}
       </div>
     </div>

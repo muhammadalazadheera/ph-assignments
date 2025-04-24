@@ -25,9 +25,13 @@ function DetailsCard({ doctor }) {
   };
   return (
     <div>
-      <div className="flex bg-base-100 shadow-sm p-6 rounded-lg gap-5">
+      <div className="flex flex-col md:flex-row bg-base-100 shadow-sm p-6 rounded-lg gap-5">
         <figure className="">
-          <img className="rounded-lg" src={doctor.img} alt="Movie" />
+          <img
+            className="rounded-lg w-full md:w-auto outline-1 outline-gray-400 outline-offset-2"
+            src={doctor.img}
+            alt="Movie"
+          />
         </figure>
         <div className="">
           <h2 className="card-title text-2xl font-semibold">{doctor.name}</h2>
@@ -49,7 +53,7 @@ function DetailsCard({ doctor }) {
                 <div className="badge badge-outline badge-warning mx-1">
                   {day}
                 </div>
-              )
+              );
             })}
           </div>
           <div className="mt-2">
@@ -71,11 +75,19 @@ function DetailsCard({ doctor }) {
             Available Today
           </div>
         </div>
-        <div className="badge badge-outline badge-warning mx-1 rounded-2xl">
+        <div className="badge badge-outline badge-warning mx-1 rounded-2xl hidden md:block">
+          <p>
+            <i className="fa fa-warning"></i> Due to high patient volume, we are
+            currently accepting appointments for today only. We appreciate your
+            understanding and cooperation.
+          </p>
+        </div>
+        <p className="md:hidden text-orange-400">
           <i className="fa fa-warning"></i> Due to high patient volume, we are
           currently accepting appointments for today only. We appreciate your
           understanding and cooperation.
-        </div>
+        </p>
+
         <button
           onClick={() => handleBooking()}
           className="btn btn-primary w-full rounded-3xl text-white mt-10"

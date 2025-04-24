@@ -9,12 +9,12 @@ function DoctorsBoard({ doctors }) {
     setVisibleCount((prev) => prev + 6);
   };
   return (
-    <div className="container w-[80%] mx-auto py-5">
+    <div className="container w-[95%] lg:w-[80%] mx-auto py-5">
       <SectionTitle
         title="Our Best Doctors"
         subtitle="Get to know the dedicated professionals who care for you"
       />
-      <div className="dr-cards grid grid-cols-3 gap-4">
+      <div className="dr-cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {doctors.slice(0, visibleCount).map((doctor) => (
           <DoctorCard
             key={doctor.id}
